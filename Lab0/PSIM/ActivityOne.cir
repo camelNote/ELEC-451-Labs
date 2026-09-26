@@ -1,0 +1,27 @@
+* Netlist C:\Users\labib\Documents\ubc\ELEC451\Lab0\ActivityOne.psimsch *
+
+.include "C:\Altair\Altair_PSIM_2026.1\SPICElib\PSIM_SPICE.sub"
+
+.tran  1.0e-003   uic
+V_VSQ1 1 2 PWL Repeat forever (0,0) ( 0 10 2.500999999999999E-05
+ +  10 2.501999999999999E-05 0 7.502E-05 0 7.502999999999999E-05
+ +  10 0.0001 10 ) endrepeat
+VI_iL 1 3 0
+
+E_vi vi 0 1 2 1
+
+L_L1 3 4 0.001 IC= 0
+C_C1 4 2 9.999999999999999E-06 IC= 0
+R_R1 4 2 20
+E_vo vo 0 4 2 1
+
+.save i(VI_iL)
+.save V(vi)
+.save V(vo)
+
+* Matching PSIM probes to SPICE probes *
+* iL 	i(VI_iL) *
+* V(vi) 	V(vi) *
+* V(vo) 	V(vo) *
+
+.end
