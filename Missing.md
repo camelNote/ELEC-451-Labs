@@ -1,4 +1,4 @@
-# Activity 5
+## Activity 5
 5aii. 2 cycles and a fraction of a third one of steady state waveform.
 5aiii. Several cycles (around 50) of steady state waveforms
 
@@ -11,6 +11,12 @@ waveform using the Measure tool and show the maximum values using Mark Data Poin
 
 5d. Complete (but make image bigger and standalone).
 
-# Activity 6
+## Activity 6
 6d. Missing
 6e. Not sure, but I think our discussion should include observations from doing 6d.
+6f. Missing
+6g. Discussion missing
+
+# Experimental
+-> Seems good! But it might be worth it to double check before submitting.
+
