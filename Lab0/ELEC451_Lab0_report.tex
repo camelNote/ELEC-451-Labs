@@ -22,6 +22,14 @@
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
 
+% *** SECTION HEADINGS *** bigger main section titles (keep IEEE centered small-caps)
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+  {3.0ex plus 1.5ex minus 1.5ex}%
+  {0.7ex plus 1ex minus 0ex}%
+  {\normalfont\Large\centering\scshape}}
+\makeatother
+
 \begin{document}
 
 % paper title
