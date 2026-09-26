@@ -37,7 +37,7 @@
 Lab 0: Introduction to Simulations and Experimental Instruments}
 
 % author names
-\author{Christian Conroy, XXXX,
+\author{Christian Conroy, 24689630,
         Labib Kowsar, 89102628,
         Didier Gil Martinez, 43783323% <-this % stops a space
 }
@@ -175,51 +175,78 @@ $v_o$ and $i_L$ overlaid.}
 
 \subsection{Measurements (Activity 5)}
 
-The mean value of $v_o$ and $i_L$ was measured with the Measure cursor tool
-over 10 complete steady-state cycles (1.00~ms). The results are listed in
-Table~\ref{tab:means}.
-% TODO: this table now has only the 10-cycle row, with vi still missing.
-% The 2.5-cycle and 50-cycle rows, and the vi mean, from the previous
-% (incorrect) simulation have been removed since they have not been
-% re-measured. If you still have those, or the vi value, send them and I'll
-% add the rows back and restore the comparison discussion.
+\textbf{(a) Mean values.}
+The mean values of $v_o$ and $i_L$ are shown in
+Fig.~\ref{fig:a5ai10} for 10 cycles, Fig.~\ref{fig:a5ai2} for 2 and a
+fraction of a third cycle, and Fig.~\ref{fig:a5ai50} for several cycles
+(around 50). The results are compiled in Table~\ref{tab:means}.
 
 \begin{table}[H]
 \renewcommand{\arraystretch}{1.2}
-\caption{Mean values over 10 steady-state cycles}
+\caption{Mean values of $v_o$ and $i_L$ over different time spans}
 \label{tab:means}
 \centering
 \begin{tabular}{lcc}
 \hline
 Time span & $v_o$ (V) & $i_L$ (A)\\
 \hline
-10 cycles  & 5.007 & 0.2495\\
+10 cycles              & 4.897 & 0.265\\
+2.33 cycles            & 4.865 & 0.271\\
+$\sim$50 cycles        & 4.975 & 0.254\\
 \hline
 \end{tabular}
 \end{table}
 
-Fig.~\ref{fig:a5vomean} shows the corresponding Measure-tool capture for $v_o$
-and Fig.~\ref{fig:a5ilmean} for $i_L$.
-
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{sim_a5_vo_mean.png}
-\caption{Mean-value measurement of $v_o$ over 10 steady-state cycles
-(1.00~ms).}
-\label{fig:a5vomean}
+\includegraphics[width=\textwidth]{sim_Act5ai.png}
+\caption{Mean value of $v_o$ and $i_L$ over 10 cycles.}
+\label{fig:a5ai10}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{sim_a5_il_mean.png}
-\caption{Mean-value measurement of $i_L$ over 10 steady-state cycles
-(1.00~ms).}
-\label{fig:a5ilmean}
+\includegraphics[width=\textwidth]{sim_Act5ai_2.33Cycles.png}
+\caption{Mean value of $v_o$ and $i_L$ over 2 and a fraction of a third
+cycle.}
+\label{fig:a5ai2}
 \end{figure}
 
-% TODO: the peak inductor-current capture from Activity 5c (Mark Data Point)
-% is not part of this batch of images -- if you have re-run it, send it over
-% and I'll add it back here with the new peak value and timestamp.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{sim_Act5ai_50PlusCycles.png}
+\caption{Mean value of $v_o$ and $i_L$ over several cycles (around 50).}
+\label{fig:a5ai50}
+\end{figure}
+
+\textbf{(b) Discussion.}
+As the number of cycles increased, the $v_o$ and $i_L$ averages drifted
+towards their steady-state values of 5~V and 0.25~A, respectively. If
+allowed to average over infinite steady-state cycles, they would approach
+those values $\pm$ the peak of the ripple.
+
+\textbf{(c) Peak inductor current.}
+The peak $i_L$ current at 5 complete steady-state cycles is 0.379~A
+(Fig.~\ref{fig:a5peak}).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{sim_Act5c_PeakCurrent.png}
+\caption{Peak inductor current at 5 complete steady-state cycles
+(0.379~A).}
+\label{fig:a5peak}
+\end{figure}
+
+\textbf{(d) Inductor current waveform.}
+The inductor-current-versus-time plot and its measurements are shown in
+Fig.~\ref{fig:a5full}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{sim_Act5d_CurrentWaveformFull.png}
+\caption{Inductor current $i_L$ versus time with cursor measurements.}
+\label{fig:a5full}
+\end{figure}
 
 \subsection{FFT (Activity 6)}
 
